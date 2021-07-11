@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Flex box</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: 500px;
+        border: 2px solid brown;
+      }
+      .box {
+        width: 200px;
+        background-color: brown;
+        margin: 10px;
+        color: white;
+        font-size: 1.4em;
+        text-align: center;
+      }
+      #box-2 {
+        flex-grow: 1;
+        order: 1;
+      }
+      #box-1 {
+        order: 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="box-1" class="box">box-1</div>
+      <div id="box-2" class="box">box-2</div>
+    </div>
+    <!-- <header></header>
+    <main>
+        <h1>This is heading</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus odio hic
+      itaque nisi nesciunt architecto distinctio, dolores provident velit, sequi
+      tempore saepe voluptate error culpa veritatis sed esse veniam possimus!
+    </p>
+
+    <a href="https://www.google.com/">Google</a>
+    <a target="_blank" href="https://www.youtube.com/">Youtube</a>
+
+    <ol>
+      <li>cal</li>
+      <li>dal</li>
+      <li>mosla</li>
+      <li>alo</li>
+    </ol>
+
+    <p>Combol = <del>120</del> taka <del>100 taka</del></p>
+
+    <p>
+      <strong>Lorem ipsum</strong> dolor, sit amet consectetur adipisicing elit.
+      <strong>Explicabo</strong> , et.
+    </p>
+    <p>
+      <b>Lorem ipsum</b>, dolor sit amet consectetur adipisicing elit.
+      Perferendis quibusdam quam <small>explicabo</small> adipisci nemo, maiores
+      quo sint impedit fugit necessitatibus!
+    </p>
+
+    <form action="">
+      <input type="text" placeholder="Enter your name" />
+      <input type="email" placeholder="enter your gmail" />
+      <input type="password" />
+      <input type="color" />
+      <input type="submit" />
+      <input type="range" />
+      <input type="date" />
+      <input type="file" />
+      <input type="reset" />
+    </form>
+    <iframe width="700" height="700" src="http://www.educationboardresults.gov.bd/" frameborder="0"></iframe>
+    <h3>Water is nothing but H<sub>2</sub>O</h3>
+    <h3>Hygrozen peroxide : H<sub>2</sub>O<sub>2</sub></h3>
+    (a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>
+
+    <br /><br />
+
+    <input type="submit" />
+    <button title="This is button">Button</button>
+    <h2 title="Hyper text markup language">I love HTML</h2>
+    
+    <table border="1" width="700" height="300">
+        <caption><h2>Tomar amr table</h2></caption>
+
+
+        
+      <thead>
+        <tr>
+          <th>SL.</th>
+          <th>Name</th>
+          <th>email</th>
+          <th>address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Arif</td>
+          <td>arif@gmail.com</td>
+          <td>Badda</td>
+        </tr>
+
+        <tr>
+          <td>02</td>
+          <td>Sumaiya</td>
+          <td>sumiaya@gmail.com</td>
+          <td>Gulsan</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Arif</td>
+          <td>arif@gmail.com</td>
+          <td>Badda</td>
+        </tr>
+
+        <tr>
+          <td>04</td>
+          <td>Sumaiya</td>
+          <td>sumiaya@gmail.com</td>
+          <td>Gulsan</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <br />
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <img width="500" src="images/pic.jpg" alt="" />
+
+    <video width="400" controls src="video/test.mp4"></video>
+
+    <video controls width="400">
+        <source src="video/test.mp4"></source>
+    </video>
+
+    <audio controls src="audio/misic.mp3"></audio>
+    <audio controls >
+        <source src="audio/misic.mp3"></source>
+    </audio>
+
+
+    <h1> <abbr title="World wide web">WWW</abbr> </h1>
+
+<details>
+    <summary>What is Alor vortha ?</summary>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum hic voluptatibus asperiores aperiam! Voluptates minima doloribus, suscipit architecto commodi at provident possimus nemo, eaque sapiente, eveniet sit vero debitis mollitia quis? Eveniet ab animi quam atque adipisci harum nesciunt est debitis? Officia cupiditate possimus eaque quo blanditiis incidunt libero, harum vero odio mollitia numquam voluptates, earum nam non exercitationem vel magni maxime nihil eius quas! Itaque magnam, rerum commodi rem ab voluptates suscipit et ad dolorum minus dolor perspiciatis! Aspernatur fugit nulla rem ea accusantium amet voluptate omnis! Nihil repudiandae nam doloremque reiciendis. Aspernatur quam nulla quibusdam a ab obcaecati.</p>
+</details>
+    <br>
+    <address>
+        name: Arif;
+        dis: Dhaka
+        road: 12/A
+    </address>
+
+    <article>
+<h1>Heading</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, beatae similique, magni amet modi assumenda, dicta nesciunt nam illo voluptate in consequatur totam aut? Asperiores pariatur rerum nobis repellat. Cum!</p>
+    </article>
+
+    <a href="xyz.com">Google</a>
+    <br>
+
+    <bdo dir="rtl">Ami tomk chara kivae  thakboo</bdo>
+
+    <br>
+
+    <blockquote>
+        <h3>Ei dunia tomar r amar</h3>
+    by - hero alom
+    </blockquote>
+
+<p><kbd>Lorem ipsum </kbd> dolor sit, amet consectetur adipisicing elit. Eaque, <code> This is coding part</code>odio.</p>
+
+    <dialog open>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, laborum.</p>
+    </dialog>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <div>
+        <h1>This is from div</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rem consectetur itaque blanditiis et magni, animi unde vero porro. Necessitatibus!</p>
+    </div>
+
+    <div>
+        <input type="text">
+        <p><em>Lorem ipsum </em> dolor sit amet consectetur adipisicing elit. Eius, odio.</p>
+    </div>
+    <i>Arif</i>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116747.72925453848!2d90.30841940283473!3d23.87661783247123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d05e7074dd%3A0xd1c58803049f00c7!2sUttara%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1625774655183!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<br>
+<br>
+<br>
+    
+    <fieldset>
+        <legend>Photgraphy</legend>
+        <ul>
+            <li>ALO</li>
+            <li>Potol</li>
+            <li>lao</li>
+            <li>mula</li>
+        </ul>
+    </fieldset>
+
+    <img src="images/pic.jpg" alt="">
+
+
+    <br />
+    <br />
+    
+    <br />
+
+    <p>Lorem ipsum dolor <mark>sit amet.</mark></p>
+
+    <hgroup>
+        <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    </hgroup>
+    <hr>
+    <hr>
+
+    <form action="">
+        <label for="aa">Enter your name :</label> <input id="aa" type="text">
+    </form>
+
+    <label for="">HTML: </label><meter value=".8"></meter> 80%
+    <label for="">CSS: </label><meter value=".2"></meter> 20%
+
+<br>
+
+    <select name="" id="">
+        <option value="">-Select-</option>
+        <option value="">ALO</option>
+        <option value="">lao</option>
+        <option value="">potol</option>
+        <option value="">kumra</option>
+    </select>
+
+
+    <p><span>Lorem ipsum </span>dolor sit amet, consectetur adipisicing elit. Enim, culpa?</p>
+    </main>
+
+    <h1><q>Lorem ipsum dolor sit.</q></h1>
+
+
+<pre>
+
+    ami sodo tomar
+    
+         tomi ki sodoee amr 
+
+    ei jobion keno eto rong bodlay
+
+</pre>
+
+<footer>
+    <h3>All rights reserved !</h3>
+</footer>
+
+
+   <script src="index.js"></script> -->
+  </body>
+</html>
